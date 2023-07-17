@@ -1,0 +1,20 @@
+<h1>Gráfica de Barras</h1>
+<hr>
+
+<div class="row">
+    <div class="col">
+
+        <canvas baseChart class="chart"
+        [data]="barChartData"
+        [options]="barChartOptions"
+        [plugins]="barChartPlugins"
+        [type]="barChartType"
+        (chartHover)="chartHovered($event)"
+        (chartClick)="chartClicked($event)">
+        </canvas>
+
+        <button mat-button mat-raised-button color="primary" (click)="randomize()">Update</button>
+
+    </div>
+</div>
+
